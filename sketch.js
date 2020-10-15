@@ -3,7 +3,7 @@ var speed, weight;
 
 function setup() {
   createCanvas(1600,400);
-  speed=random(5,8);
+  speed=random(1,3);
   weight=random(400,1500);
   car.velocityX=speed;
 }
@@ -12,6 +12,7 @@ function draw() {
   background(255,255,255);  
   car=createSprite(50,200,50,50);
   wall=createSprite(1500,200,60,height/2);
+  wall.shapeColor="black";
 
   if(wall.x-car.x<(car.width+wall.width)/2 && car.x-wall.x<(car.width+wall.width)/2)
   {
