@@ -10,6 +10,7 @@ function setup() {
 
 function draw() {
   background(255,255,255);  
+  drawSprites();
   car=createSprite(50,200,50,50);
   wall=createSprite(1500,200,60,height/2);
 
@@ -30,5 +31,4 @@ function draw() {
         car.shapeColor=color(0,255,0)
     }
   }
-  drawSprites();
 }
