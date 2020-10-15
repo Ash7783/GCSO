@@ -12,7 +12,7 @@ function draw() {
   background(255,255,255);  
   car=createSprite(50,200,50,50);
   wall=createSprite(1500,200,60,height/2);
-  wall.shapeColor="black";
+  wall.shapeColor=(black);
 
   if(wall.x-car.x<(car.width+wall.width)/2 && car.x-wall.x<(car.width+wall.width)/2)
   {
